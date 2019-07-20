@@ -1,0 +1,9 @@
+.number-verify-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    &__msg {
+        margin-top: 4px;
+    }
+}

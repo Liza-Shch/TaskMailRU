@@ -1,0 +1,9 @@
+.number-verify-msg {
+    font-family: 'ArialMT';
+    font-size: 13px;
+    line-height: 20px;
+
+    &_error {
+        color: #FF1100;
+    }
+}
