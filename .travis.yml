@@ -19,4 +19,4 @@ jobs:
       secure: 6f816b49-834e-47a9-a335-82d7e78191b2
     on:
       tags: true
-      repo: @Liza-Shch/TaskMailRU
+      repo: https://github.com/Liza-Shch/TaskMailRU.git
