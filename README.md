@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/Liza-Shch/TaskMailRU.svg?branch=master)](https://travis-ci.com/Liza-Shch/TaskMailRU)
 number-verify
 =================
 Instal
