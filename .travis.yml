@@ -1,0 +1,22 @@
+anguage: node_js
+node_js:
+- 10
+cache:
+  npm: true
+  directories:
+  - "~/.cache"
+jobs:
+  include:
+    - stage: "Tests"
+      env:
+      - PORT_TEST=3000
+      script: npm run build && npm run test
+  deploy:
+    provider: npm
+    email: scherbakova.liz@yandex.ru
+    skip_cleanup: true
+    api_key:
+      secure: 6f816b49-834e-47a9-a335-82d7e78191b2
+    on:
+      tags: true
+      repo: @Liza-Shch/TaskMailRU
