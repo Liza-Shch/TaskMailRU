@@ -2,7 +2,7 @@ const path = require('path');
 const src = path.resolve(__dirname, 'public');
 const build = path.resolve(__dirname, 'dist');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: path.resolve(src, 'index.js'),
@@ -33,16 +33,11 @@ module.exports = {
 
             {
                 test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader',
-                        {
-                            loader: 'sass-loader',
-                            options: {
-                                includePaths: [src],
-                            }
-                        }]
-                })
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {loader: 'css-loader'},
+                    {loader: 'sass-loader'}
+                  ],
             },
         ]
     },
@@ -50,6 +45,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(src, 'index.html')
         }),
-        new ExtractTextPlugin('bundle.css'),
+        new MiniCssExtractPlugin('bundle.css'),
     ]
 };

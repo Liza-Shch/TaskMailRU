@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots NumberVerify error 1`] = `
+<div
+  class="number-verify-container"
+>
+  <div
+    class="number-verify-number"
+  >
+    +
+    <div
+      class="number-verify-number__block"
+    />
+    (
+    <div
+      class="number-verify-number__block"
+    />
+    <div
+      class="number-verify-number__block"
+    />
+    <div
+      class="number-verify-number__block"
+    />
+    )
+    <div
+      class="number-verify-number__block"
+    />
+    <input
+      class="number-verify-number__input number-verify-number__input_error"
+      placeholder="_"
+    />
+    <input
+      class="number-verify-number__input number-verify-number__input_error"
+      placeholder="_"
+    />
+    -
+    <div
+      class="number-verify-number__block"
+    />
+    <div
+      class="number-verify-number__block"
+    />
+    -
+    <div
+      class="number-verify-number__block"
+    />
+    <div
+      class="number-verify-number__block"
+    />
+  </div>
+  <div
+    class="number-verify-msg number-verify-container__msg number-verify-msg_error"
+  >
+    Неверный номер, попробуйте еще раз
+  </div>
+</div>
+`;
+
+exports[`Storyshots NumberVerify normal 1`] = `
+<div
+  class="number-verify-container"
+>
+  <div
+    class="number-verify-number"
+  >
+    +
+    <div
+      class="number-verify-number__block"
+    />
+    (
+    <div
+      class="number-verify-number__block"
+    />
+    <div
+      class="number-verify-number__block"
+    />
+    <div
+      class="number-verify-number__block"
+    />
+    )
+    <div
+      class="number-verify-number__block"
+    />
+    <input
+      class="number-verify-number__input"
+      placeholder="_"
+    />
+    <input
+      class="number-verify-number__input"
+      placeholder="_"
+    />
+    -
+    <div
+      class="number-verify-number__block"
+    />
+    <div
+      class="number-verify-number__block"
+    />
+    -
+    <div
+      class="number-verify-number__block"
+    />
+    <div
+      class="number-verify-number__block"
+    />
+  </div>
+</div>
+`;

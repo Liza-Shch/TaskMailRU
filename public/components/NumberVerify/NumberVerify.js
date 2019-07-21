@@ -19,6 +19,7 @@ export default class NumberVerify {
 		this._number.render();
 
 		this._targetRender.appendChild(container);
+		return container;
 	}
 
 	onSuccess() {
